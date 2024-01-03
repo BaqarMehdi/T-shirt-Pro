@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.materialdesignicons.com/4.5.95/css/materialdesignicons.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script
+      src="https://kit.fontawesome.com/923caf90a1.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>T-Shirt</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo"><i class="mdi mdi-tshirt-v"></i></div>
+      <div class="logo-heading">
+        <h2><span>T-Shirt</span> Designer</h2>
+      </div>
+    </div>
+    <div class="container" data-aos="zoom-in-down">
+      <div class="image-container" >
+        <div class="centered-text">
+          <p id="textOnShirt" aria-placeholder="Your text will apear here">
+            Your text will apear here
+          </p>
+        </div>
+        <div class="image"  >
+          <img  id="shirt" src="./black.png" height="23rem" width="23rem" />
+        </div>
+      </div>
+      <div class="features-container">
+        <div class="fea-heading">
+          <h2>Shirt Variant</h2>
+        </div>
+        <div class="btn-circle">
+          <button
+            id="color-btn"
+            onclick="shirtColor1()"
+            class="btn black"
+          ></button>
+          <button 
+            id="color-btn"
+            onclick="shirtColor2()"
+            class="btn green"
+          ></button>
+          <button
+            id="color-btn"
+            onclick="shirtColor3()"
+            class="btn gray"
+          ></button>
+          <button
+            id="color-btn"
+            onclick="shirtColor4()"
+            class="btn purple"
+          ></button>
+          <button
+            id="color-btn"
+            onclick="shirtColor5()"
+            class="btn yellow"
+          ></button>
+        </div>
+        <div class="fea-heading">
+          <h2>Text Style</h2>
+        </div>
+        <div class="text-area">
+          <textarea
+            name=""
+            oninput="OnShirt()"
+            id="textbox"
+            cols="36"
+            rows="7"
+            placeholder="Your text will appear here"
+          ></textarea>
+        </div>
+        <div class="btn-line">
+          <input
+            type="color"
+            id="clrbox"
+            oninput="changeColor()"
+            class="scr-btns"
+          />
+          <button class="scr-btns" id="boldbtn" onclick="boldtext()">
+            <strong>B</strong>
+          </button>
+          <button class="scr-btns" id="italicbtn" onclick="italictext()">
+            <strong>I</strong>
+          </button>
+          <button class="scr-btns" id="alignLeft" onclick="alignLeft()">
+            <strong><i class="fa-solid fa-align-left"></i></strong>
+          </button>
+          <button class="scr-btns" id="alignCenter" onclick="alignCenter()">
+            <strong><i class="fa-solid fa-align-justify"></i></strong>
+          </button>
+          <button class="scr-btns" id="alignRight" onclick="alignRight()">
+            <strong><i class="fa-solid fa-align-right"></i></strong>
+          </button>
+        </div>
+        <div class="lst-line">
+          <div class="lst-text">
+            <h2>Font Size</h2>
+          </div>
+          <div class="lst-btns-line">
+            <button class="lst-btns" onclick="minusFont()">
+              <strong>-</strong>
+            </button>
+            <button class="lst-btns" id="pxbox"><strong>16px</strong></button>
+            <button class="lst-btns" onclick="plusFont()">
+              <strong>+</strong>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="footer">
+      <div class="name"><h3>Made by Baqar Mehdi</h3></div>
+      <!-- <div class="footer-links">
+        <i class="fa-brands fa-github linkk"></i>
+        <i class="fa-brands fa-facebook linkk"></i>
+        <i class="fa-brands fa-linkedin linkk"></i>
+      </div> -->
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="script.js"></script>
+    <script src="/script.js"></script>
+  </body>
+</html>

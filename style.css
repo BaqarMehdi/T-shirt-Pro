@@ -1,0 +1,166 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo i {
+  font-size: 3rem;
+  color: #669bbc;
+}
+.logo-heading h2 span {
+  color: green;
+}
+
+.container {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+/* image-container-CSS */
+
+.image-container {
+  border: 1px solid #999;
+  border-radius: 0.5rem;
+  position: relative;
+  background-color: #fff;
+}
+
+.centered-text {
+  height: 7rem;
+  width: 8rem;
+  position: absolute;
+  top: 40%;
+  left: 33%;
+  overflow-wrap: break-word;
+  overflow-y: hidden;
+}
+#textOnShirt {
+  width: 100%;
+}
+
+.image img {
+  transition: all .3s ease-in-out;
+  height: 25rem;
+  width: 23rem;
+}
+
+/* features-container-Css */
+
+.features-container {
+  border: 1px solid #999;
+  border-radius: 0.5rem;
+  width: 23rem;
+  height: 100%;
+  background-color: #fff;
+}
+
+.fea-heading {
+  margin: 1.21em;
+  text-align: center;
+}
+
+.btn-circle {
+  margin: 1em 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn {
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+  display: block;
+  border-radius: 50%;
+  height: 3rem;
+  margin: 0 0.4em;
+  width: 3rem;
+  transition: all 0.3s ease-in-out;
+}
+.black {
+  border: none;
+  background-color: black;
+}
+.green {
+  border: none;
+  background-color: green;
+}
+.gray {
+  border: none;
+  background-color: gray;
+}
+.purple {
+  border: none;
+  background-color: purple;
+}
+
+.yellow {
+  border: none;
+  background-color: yellow;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+.text-area {
+  margin: 0.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+textarea {
+  padding: 0.5em;
+}
+
+.btn-line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scr-btns {
+  cursor: pointer;
+  margin: 0.6em;
+  display: block;
+  height: 2rem;
+  width: 2rem;
+}
+
+.lst-line {
+  margin: 0.4rem 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.lst-btns {
+  font-weight: 700;
+  padding: 7px 14px;
+}
+
+/* @media (width: 680px) {
+} */
+
+section.footer{
+    padding: 1.5rem;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: #999;
+    text-align: center;    
+}
+.name{
+    color: #fff;
+}
+
+@media (max-width: 680px) {
+  .container {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+}
